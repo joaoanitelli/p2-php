@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3>Cadastro do Carro</h3>
+                <form action="/carro/criar" method="post">
+                    <div class="mb-3">
+                        <label for="modelo" class="form-label">Modelo:</label>
+                        <input type="text" class="form-control" id="modelo" name="modelo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ano" class="form-label">Ano:</label>
+                        <input type="number" class="form-control" step="0.01" name="ano" id="ano" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cor" class="form-label">Cor:</label>
+                        <input type="text" class="form-control" step="0.01" name="cor" id="cor" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="valor" class="form-label">Valor:</label>
+                        <input type="number" class="form-control" step="0.01" name="valor" id="valor" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

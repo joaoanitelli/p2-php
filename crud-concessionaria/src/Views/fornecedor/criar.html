@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornecedor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h3>Cadastro de Fornecedor</h3>
+                <form action="/fornecedor/criar" method="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade" class="form-label">Cidade:</label>
+                        <input type="text" class="form-control" id="cidade" name="cidade" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="estado" class="form-label">Estado:</label>
+                        <input type="text" class="form-control" id="estado" name="estado" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
